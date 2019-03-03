@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>My Homepage</title>
+    <center>
+      <div>
+      <p><b><h1>Programming Homepage</h1></b></p>
+      <img src = "download.jpg" alt="data" height="150" width="300">
+      </div>
+    </center>
+
+  </head>
+</html>
+
+<script type="text/javascript">
+
+  document.write("<br>");
+  document.write("<br>");
+
+  var parent = new Date();
+  var currentHours = parent.getHours();
+  var currentMonth = parent.getMonth();
+
+  document.write("Today's date and time is " + parent);
+
+  document.write("<br>");
+  document.write("<br>");
+
+  var question = "What is your name?";
+  var answer = prompt(question);
+  document.write("Hello," + " " + answer + ".");
+
+  document.write("<br>");
+  document.write("<br>");
+</script>
+
+<form name="rn">
+    <input type="text" id="tb" name="tb" />
+    <input type="button" value="Random Number" onclick="Random();" />
+</form>
+
+<script type="text/javascript">
+
+function Random() {
+        var rnd = Math.floor(Math.random() * 100);
+        document.getElementById('tb').value = rnd;
+    }
+
+    var AvgScore = 6.5703;
+    var NewValue = Math.round(AvgScore);
+    document.write("I have successfully rounded the number " + AvgScore + " to " + NewValue);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("The current hours is the following: " + currentHours);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("This month is " + currentMonth);
+
+</script>
